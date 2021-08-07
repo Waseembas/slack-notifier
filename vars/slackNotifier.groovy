@@ -16,4 +16,3 @@ def call(String buildResult) {
 }
 
 
-(<${env.BUILD_URL}|Open>) 
