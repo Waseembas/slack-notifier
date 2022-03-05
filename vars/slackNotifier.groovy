@@ -2,10 +2,10 @@
 
 def call(String buildResult) {
   if ( buildResult == "SUCCESS" ) {
-    slackSend color: "danger", message: "${env.JOB_NAME} » ${env.branch} (<${env.GIT_BASE}/${env.GIT_LAST_COMMIT}|${env.GIT_LAST_COMMIT}>)  configure context test cases success » build (<${env.BUILD_URL}|${env.BUILD_NUMBER}>) » finhish time ${date}"
+    slackSend color: "danger", message: "${env.JOB_NAME} » ${env.branch} (<${env.GIT_BASE}/${env.GIT_LAST_COMMIT}|${env.GIT_LAST_COMMIT}>)  configure context test cases success » build (<${env.BUILD_URL}|${env.BUILD_NUMBER}>) » fihish"
   }
   else if( buildResult == "FAILURE" ) { 
-    slackSend color: "danger", message: "${env.JOB_NAME} » ${env.branch} (<${env.GIT_BASE}/${env.GIT_LAST_COMMIT}|${env.GIT_LAST_COMMIT}>)  configure context test cases failure » build (<${env.BUILD_URL}|${env.BUILD_NUMBER}>) » finhish ${date}"
+    slackSend color: "danger", message: "${env.JOB_NAME} » ${env.branch} (<${env.GIT_BASE}/${env.GIT_LAST_COMMIT}|${env.GIT_LAST_COMMIT}>)  configure context test cases failure » build (<${env.BUILD_URL}|${env.BUILD_NUMBER}>) » finish"
   
   }
   else if( buildResult == "UNSTABLE" ) { 
